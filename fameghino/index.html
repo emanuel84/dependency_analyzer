@@ -1,0 +1,117 @@
+
+<title>
+    
+        EDU ANALYTICA
+    
+</title>
+
+
+    <link rel="shortcut icon" href="/static/favicon.ico">
+
+
+<html>
+   
+    <head>
+	    <link rel="stylesheet" href="/static/css/estilos.css">
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <link rel="stylesheet" href="/static/css/font-awesome/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Path to manifest.json -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="EduAnalytica">
+
+
+<!-- Chrome for Android theme color -->
+<meta name="theme-color" content="#000">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="EduAnalytica">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<link rel="apple-touch-icon" href="/static/images/logo192.png" sizes="">
+
+<link rel="apple-touch-icon" href="/static/images/logo512.png" sizes="">
+
+
+
+
+<link href="/static/images/icons/splash-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"/>
+
+
+
+<!-- Tile for Win8 -->
+<meta name="msapplication-TileColor" content="#fff">
+
+<meta name="msapplication-TileImage" content="/static/images/logo512.png">
+
+
+<link rel="icon" sizes="" href="/static/images/logo512.png">
+
+
+<script type="text/javascript">
+    // Initialize the service worker
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/serviceworker.js', {
+            scope: '/'
+        }).then(function (registration) {
+            // Registration was successful
+            console.log('django-pwa: ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+            // registration failed :(
+            console.log('django-pwa: ServiceWorker registration failed: ', err);
+        });
+    }
+</script>
+
+        <script src="/static/js/pwa.js"> </script>
+
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            
+
+            
+<div class="container-login">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<form class="form-signin" action="" method="post" id="login-form"><input type="hidden" name="csrfmiddlewaretoken" value="atIv2E11BSmgRRquFmtZA4FvaJSOl0zqdATWKYG6TO7sGUFpvZ0xDqassjM8O10F">
+
+    <table border="0" width="100%">
+        <tr>
+            <td><img width="50px" height="69px" src="/static/images/logo3.png">
+            </td>
+            <td style="text-align: right"><h3 class="form-signin-institution">Florentino Ameghino</h3></td>
+        </tr>
+    </table>
+    <br>
+
+      
+    <input id="id_username" name="username" type="username" class="form-control"
+         placeholder="Usuario" required autofocus maxlength="50" type="text"/>
+    <br>
+    
+    <input  id="id_password" name="password" type="password" class="form-control"
+          placeholder="Contraseña" required >
+    <br>
+
+    <a href="/reset_password">
+        <span>¿olvidaste tu contraseña?</span>
+    </a>
+    <br><br>
+
+<button class="btn btn-primary btn-block fa fa-graduation-cap" type="submit"> Ingresar </button>
+</form>
+</div>
+
+        </div>
+
+    </body>
+</html>
